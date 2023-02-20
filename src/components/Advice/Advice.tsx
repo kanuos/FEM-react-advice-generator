@@ -9,7 +9,7 @@ export const Advice: FC<AdvicePropType> = ({ advice, slip_id }) => {
       <small
         aria-label="advice-id"
         className="text-xs uppercase tracking-widest text-primary-2">
-        Advice #{slip_id}
+        {isNaN(slip_id) ? "error" : `Advice #${slip_id}`}
       </small>
 
       {/* quote body */}
