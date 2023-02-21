@@ -9,5 +9,9 @@ export default defineConfig({
   test: {
     environment: "jsdom",
     globals: true
-  }
+  },
+  build: {
+    minify: "esbuild"
+  },
+  base: `FEM-react-advice-generator`
 })
